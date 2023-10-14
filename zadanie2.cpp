@@ -1,6 +1,4 @@
 ﻿#include <iostream>
-#include <list>
-#include <typeinfo>
 using namespace std;
 
 int main() {
