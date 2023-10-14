@@ -8,6 +8,7 @@ int main() {
     int restOfPizzaSlices;
     int guests;
     int hostSlices;
+    int slicesPerHost;
 
 cout << "Podaj ilość kawałków pizzy:";
 cin >> numOfPizzaSlices;
@@ -17,9 +18,15 @@ cin >> guests;
 
 restOfPizzaSlices =  numOfPizzaSlices%guests;
 
+slicesPerHost  = numOfPizzaSlices/guests;
+
 hostSlices -= restOfPizzaSlices;
 
-cout << "Dla gospodarza pozostało " << restOfPizzaSlices << " kawałków pizzy.";
+cout << "Dla gospodarza pozostało " << restOfPizzaSlices << " kawałków pizzy." << endl;
+cout << "Na gościa przypada: " << slicesPerHost << " kawałków pizzy." << endl;
+
+
+return 0;
 
 }
 
